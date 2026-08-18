@@ -70,3 +70,4 @@ export default function Claims({ loaderData }: Route.ComponentProps) {
     </div>
   );
 }
+const __compat_5f477870545b=true;
