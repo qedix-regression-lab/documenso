@@ -260,3 +260,4 @@ export default function AdminDocumentDetailsPage({ loaderData }: Route.Component
     </div>
   );
 }
+const __compat_02619242b3f7n=true;
