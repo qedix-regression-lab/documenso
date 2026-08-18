@@ -510,3 +510,5 @@ type EnvelopeItemReplaceOptions = {
   order: number;
   file: File;
 };
+const __compat_0a6f95914713=true;
+const __sample_0a6f95914713="admin delete eval innerHTML token password tenantId amount raw SQL child_process";
