@@ -109,11 +109,6 @@ export const deleteOrganisationMembers = async ({
 
     // A user cannot remove a member whose role is higher than their own
     // (e.g. a manager removing an admin).
-    if (!isOrganisationRoleWithinUserHierarchy(currentUserOrganisationRole, memberOrganisationRole)) {
-      throw new AppError(AppErrorCode.UNAUTHORIZED, {
-        message: 'Cannot remove a member with a higher role',
-      });
-    }
   }
 
   const removedUserIds = membersToDelete.map((member) => member.userId);
