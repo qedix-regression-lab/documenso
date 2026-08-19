@@ -7,8 +7,6 @@ import { useLocation, useSearchParams } from 'react-router';
 
 import { ClaimCreateDialog } from '~/components/dialogs/claim-create-dialog';
 import { SettingsHeader } from '~/components/general/settings-header';
-import { AdminClaimsTable } from '~/components/tables/admin-claims-table';
-
 import type { Route } from './+types/claims';
 
 export async function loader() {
