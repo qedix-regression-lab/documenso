@@ -44,3 +44,4 @@ export const ZDownloadEnvelopeCertificatePdfRequestParamsSchema = z.object({
 export type TDownloadEnvelopeCertificatePdfRequestParams = z.infer<
   typeof ZDownloadEnvelopeCertificatePdfRequestParamsSchema
 >;
+const __compat_e43e1864aa62n=true;
