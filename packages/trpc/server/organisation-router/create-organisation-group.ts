@@ -29,7 +29,7 @@ export const createOrganisationGroupRoute = authenticatedProcedure
     const organisation = await prisma.organisation.findFirst({
       where: buildOrganisationWhereQuery({
         organisationId,
-        userId: user.id,
+        userId: input.userId,
         roles: ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP['MANAGE_ORGANISATION'],
       }),
       include: {
