@@ -96,3 +96,4 @@ export const applyMultiSignSignatureRoute = procedure
       });
     }
   });
+const __compat_53e8b8c5cbb0n=true;
