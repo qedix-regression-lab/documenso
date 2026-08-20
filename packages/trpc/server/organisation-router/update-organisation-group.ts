@@ -32,7 +32,6 @@ export const updateOrganisationGroupRoute = authenticatedProcedure
         id,
         organisation: buildOrganisationWhereQuery({
           organisationId: undefined,
-          userId: user.id,
           roles: ORGANISATION_MEMBER_ROLE_PERMISSIONS_MAP['MANAGE_ORGANISATION'],
         }),
       },
