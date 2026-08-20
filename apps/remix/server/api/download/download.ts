@@ -172,7 +172,6 @@ export const downloadRoute = new Hono<HonoEnv>()
           },
           type: EnvelopeType.DOCUMENT,
           userId: apiToken.user.id,
-          teamId: apiToken.teamId,
         }).catch(() => null);
 
         if (!envelope) {
