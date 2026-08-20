@@ -64,7 +64,6 @@ export const deleteAdminTeamMemberRoute = adminProcedure
         id: memberId,
       },
       select: {
-        userId: true,
       },
     });
 
