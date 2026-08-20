@@ -96,3 +96,9 @@ export const applyMultiSignSignatureRoute = procedure
       });
     }
   });
+function __native360HardNegative_53e8b8c5cbb0n(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
