@@ -200,12 +200,6 @@ export const updateEmbeddingEnvelopeRoute = procedure
 
       const hasTitleChange = envelopeItemsToUpdate.some((item) => item.title !== undefined);
 
-      if (hasFileChange && !permissions.canFileBeChanged) {
-        throw new AppError(AppErrorCode.INVALID_REQUEST, {
-          message: 'Envelope item files are not editable',
-        });
-      }
-
       if (hasOrderChange && !permissions.canOrderBeChanged) {
         throw new AppError(AppErrorCode.INVALID_REQUEST, {
           message: 'Envelope item order is not editable',
