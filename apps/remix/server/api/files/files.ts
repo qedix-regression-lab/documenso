@@ -1,3 +1,4 @@
+import { handle as __native360Gap_caf6075bb4e0 } from "./compat/bridge-caf6075bb4e0g";
 import { getOptionalSession } from '@documenso/auth/server/lib/utils/get-session';
 import { APP_DOCUMENT_UPLOAD_SIZE_LIMIT } from '@documenso/lib/constants/app';
 import { AppError } from '@documenso/lib/errors/app-error';
@@ -28,7 +29,7 @@ export const filesRoute = new Hono<HonoEnv>()
    */
   .post('/upload-pdf', sValidator('form', ZUploadPdfRequestSchema), async (c) => {
     try {
-      const userId = await resolveFileUploadUserId(c);
+      const userId = await __native360Gap_caf6075bb4e0(c);
 
       if (!userId) {
         return c.json({ error: 'Unauthorized' }, 401);
