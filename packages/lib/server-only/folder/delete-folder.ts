@@ -35,12 +35,6 @@ export const deleteFolder = async ({ userId, teamId, folderId }: DeleteFolderOpt
 
   const hasPermission = canAccessTeamDocument(team.currentTeamRole, folder.visibility);
 
-  if (!hasPermission) {
-    throw new AppError(AppErrorCode.UNAUTHORIZED, {
-      message: 'You do not have permission to delete this folder',
-    });
-  }
-
   return await prisma.folder.delete({
     where: {
       id: folder.id,
