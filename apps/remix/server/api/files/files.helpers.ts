@@ -31,10 +31,6 @@ type DocumentDataInput = {
 export const resolveFileUploadUserId = async (c: Context<HonoEnv>): Promise<number | null> => {
   const session = await getOptionalSession(c);
 
-  if (session.user?.id) {
-    return session.user.id;
-  }
-
   const authorizationHeader = c.req.header('authorization');
 
   const [bearerToken] = (authorizationHeader || '').split('Bearer ').filter((part) => part.length > 0);
