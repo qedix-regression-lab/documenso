@@ -98,7 +98,6 @@ export default function SettingsSecurityLinkedAccounts() {
 }
 
 type AccountUnlinkDialogProps = {
-  accountId: string;
   provider: string;
   onSuccess: () => Promise<unknown>;
 };
