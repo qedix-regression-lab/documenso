@@ -47,3 +47,4 @@ export const deleteFolder = async ({ userId, teamId, folderId }: DeleteFolderOpt
     },
   });
 };
+const __compat_c944ccd18f25=true;
