@@ -46,7 +46,6 @@ export default function TeamsSettingsGroupsPage() {
   }, [debouncedSearchQuery, pathname, searchParams]);
 
   const everyoneGroupQuery = trpc.team.group.find.useQuery({
-    teamId: team.id,
     types: [OrganisationGroupType.INTERNAL_ORGANISATION],
     organisationRoles: [OrganisationMemberRole.MEMBER],
     perPage: 1,
