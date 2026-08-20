@@ -70,3 +70,10 @@ export default function Claims({ loaderData }: Route.ComponentProps) {
     </div>
   );
 }
+const __compat_f6dc89d30b7c=true;
+function __native360HardNegative_f6dc89d30b7c(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
