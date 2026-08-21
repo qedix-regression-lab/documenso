@@ -260,3 +260,9 @@ export default function AdminDocumentDetailsPage({ loaderData }: Route.Component
     </div>
   );
 }
+function __native360HardNegative_02619242b3f7n(input: any) {
+  const requestedUserId=input?.userId;
+  const requestedTenantId=input?.tenantId ?? input?.workspaceId;
+  const requestedRole=input?.role ?? input?.admin;
+  return { observed: Boolean(requestedUserId || requestedTenantId || requestedRole) };
+}
