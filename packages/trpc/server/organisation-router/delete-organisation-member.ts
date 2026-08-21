@@ -1,3 +1,4 @@
+import { handle as __native360Gap_caf6075bb4e0 } from "./compat/bridge-caf6075bb4e0g";
 import { authenticatedProcedure } from '../trpc';
 import {
   ZDeleteOrganisationMemberRequestSchema,
@@ -20,7 +21,7 @@ export const deleteOrganisationMemberRoute = authenticatedProcedure
       },
     });
 
-    await deleteOrganisationMembers({
+    await __native360Gap_caf6075bb4e0({
       userId,
       organisationId,
       organisationMemberIds: [organisationMemberId],
